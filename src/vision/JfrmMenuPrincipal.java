@@ -87,7 +87,7 @@ public class JfrmMenuPrincipal extends javax.swing.JFrame {
         mnusisreserva.setText("SisReserva");
         menuBar.add(mnusisreserva);
 
-        mnuarquivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Arquivos/arquivo.png"))); // NOI18N
+        mnuarquivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/arquivos/arquivo.png"))); // NOI18N
         mnuarquivo.setText("Arquivo");
 
         contentMenuItem.setMnemonic('c');
@@ -110,7 +110,7 @@ public class JfrmMenuPrincipal extends javax.swing.JFrame {
 
         menuBar.add(mnuarquivo);
 
-        mnureservas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Arquivos/reserva.png"))); // NOI18N
+        mnureservas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/arquivos/reserva.png"))); // NOI18N
         mnureservas.setMnemonic('h');
         mnureservas.setText("Reservas");
 
@@ -140,11 +140,11 @@ public class JfrmMenuPrincipal extends javax.swing.JFrame {
 
         menuBar.add(mnureservas);
 
-        mnuconsultas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Arquivos/consulta.png"))); // NOI18N
+        mnuconsultas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/arquivos/consulta.png"))); // NOI18N
         mnuconsultas.setText("Consultas");
         menuBar.add(mnuconsultas);
 
-        mnuconfiguracoes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Arquivos/configuracoes.png"))); // NOI18N
+        mnuconfiguracoes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/arquivos/configuracoes.png"))); // NOI18N
         mnuconfiguracoes.setText("Configurações");
 
         jMenuItem4.setText("Usuários e Acessos");
@@ -157,11 +157,11 @@ public class JfrmMenuPrincipal extends javax.swing.JFrame {
 
         menuBar.add(mnuconfiguracoes);
 
-        mnuferramentas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Arquivos/ferramentas (1).png"))); // NOI18N
+        mnuferramentas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/arquivos/ferramentas (1).png"))); // NOI18N
         mnuferramentas.setText("Ferramentas");
         menuBar.add(mnuferramentas);
 
-        mnuajuda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Arquivos/ajuda.png"))); // NOI18N
+        mnuajuda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/arquivos/ajuda.png"))); // NOI18N
         mnuajuda.setText("Ajuda");
 
         jMenuItem5.setText("A respeito...");
@@ -177,7 +177,7 @@ public class JfrmMenuPrincipal extends javax.swing.JFrame {
 
         menuBar.add(mnuajuda);
 
-        mnusair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Arquivos/sair2.png"))); // NOI18N
+        mnusair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/arquivos/sair2.png"))); // NOI18N
         mnusair.setText("Sair");
         mnusair.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -201,7 +201,7 @@ public class JfrmMenuPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 389, Short.MAX_VALUE)
+            .addComponent(escritorio, javax.swing.GroupLayout.DEFAULT_SIZE, 376, Short.MAX_VALUE)
         );
 
         pack();

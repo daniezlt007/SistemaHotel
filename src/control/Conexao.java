@@ -16,7 +16,7 @@ import javax.swing.JOptionPane;
  */
 public class Conexao {
     //public String db="basehotel";
-    public String url="jdbc:mysql://127.0.0.1/basehotel";
+    public String url="jdbc:mysql://localhost/basehotel";
     public String user="root";
     public String pass="root";
     

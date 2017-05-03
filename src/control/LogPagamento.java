@@ -9,6 +9,7 @@ import model.DadPagamento;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -77,13 +78,9 @@ public class LogPagamento {
 
             int n = pst.executeUpdate();
 
-            if (n != 0) {
-                return true;
-            } else {
-                return false;
-            }
+            return n != 0;
 
-        } catch (Exception e) {
+        } catch (SQLException e) {
             JOptionPane.showConfirmDialog(null, e);
             return false;
         }

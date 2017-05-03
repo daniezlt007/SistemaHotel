@@ -5,11 +5,11 @@
  */
 package control;
 
-import model.DadHabitacao;
 import model.DadProduto;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -19,8 +19,8 @@ import javax.swing.table.DefaultTableModel;
  * @author Daniel
  */
 public class LogProduto {
-    private Conexao mysql = new Conexao();
-    private Connection cn = mysql.conectar();
+    private final Conexao mysql = new Conexao();
+    private final Connection cn = mysql.conectar();
     private String eSQL="";
     public Integer totalRegistros;
     
@@ -54,7 +54,7 @@ public class LogProduto {
             }
             return modelo;
             
-        }catch (Exception e){
+        }catch (SQLException e){
             JOptionPane.showConfirmDialog(null, e);
             return null;
         }          
@@ -73,13 +73,9 @@ public class LogProduto {
             
             int n = pst.executeUpdate();
             
-            if (n !=0){
-                return true;
-            }else{
-                return false;
-            }
+            return n !=0;
             
-        } catch (Exception e) {
+        } catch (SQLException e) {
             JOptionPane.showConfirmDialog(null, e);
             return false;
         }
@@ -99,12 +95,8 @@ public class LogProduto {
             
             int n = pst.executeUpdate();
             
-            if (n !=0){
-                return true;
-            }else{
-                return false;
-            }
-        } catch (Exception e) {
+            return n !=0;
+        } catch (SQLException e) {
             JOptionPane.showConfirmDialog(null, e);
             return false;
         }
@@ -123,7 +115,7 @@ public class LogProduto {
             }else{
                 return false;
             }
-        } catch (Exception e) {
+        } catch (SQLException e) {
             JOptionPane.showConfirmDialog(null, e);
             return false;
         }
